@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+
+#root {
+    cursor: crosshair;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    background: url('https://raw.githubusercontent.com/vaielab/DuckHuntCss/master/stage.png');
+    background-size: contain;
+}
+
+.duck {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://thumbs.gfycat.com/EasyMerryAnteater-size_restricted.gif');
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.duck.duck_reverse {
+    transform: scaleX(-1);
+}
+
+.score_ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.start_screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: 3em;
+    opacity: 0.9;
+    background: grey;
+}
+
+.win_screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: 3em;
+    opacity: 0.9;
+    background: grey;
+}
+
+.loose_screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: 3em;
+    opacity: 0.9;
+    background: grey;
+}
+
+.score_li_time {
+    border: 5px solid blue;
+}
+.score_li_hunter {
+    border: 5px solid yellow;
+}
+.score_li_duck {
+    border: 5px solid green;
+}
